@@ -35,7 +35,6 @@ function render() {
     row.innerHTML = `
       <td>${entry.title}</td>
       <td>${entry.rating.toFixed(1)}/10</td>
-      <td>${new Date(entry.createdAt).toLocaleDateString()}</td>
       <td class="row">
         <button class="secondary" data-action="edit" data-id="${entry.id}">Edit</button>
         <button class="danger" data-action="delete" data-id="${entry.id}">Delete</button>
