@@ -1,1 +1,1927 @@
-[]
+[
+  {
+    "id": "3887030b-0b1c-4998-a9fe-05621fd8fc7c",
+    "title": "My Hero Academia",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e58559cb-7651-4c65-b5af-74192529314e",
+    "title": "Naruto",
+    "rating": 9.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d9a2cc63-05ca-4bca-a38a-38eab7edae4b",
+    "title": "Attack on Titan",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "51aa95c3-1d81-4278-ad15-b96f63eeabc7",
+    "title": "One Punch Man",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9ecec53f-9f30-4479-a249-98eb364eb645",
+    "title": "Sword Art Online",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "24e6891c-3336-4e7e-a9e6-7c07160e4d9f",
+    "title": "The Time I Got Reincarnated as a Slime",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "809b70b6-6213-4838-a767-3c1bff1b4bdd",
+    "title": "The Misfit of Demon King Academy",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "18287d3f-7c09-4130-ad75-954fca3a5d2a",
+    "title": "Konosuba",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7ccc2b09-b3d6-43a9-9925-cc785b2ad5ad",
+    "title": "I Want to Eat Your Pancreas",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "597df994-4fc9-4252-8a88-26c445996df4",
+    "title": "So I’m a Spider, So What?",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6f64fa52-cf31-4b5f-b641-af2e9714b64a",
+    "title": "Demon Slayer",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "037b5845-d655-4033-9c5a-7a53f58fd040",
+    "title": "Assassination Classroom",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "93c139c4-41d7-4b3a-bae5-e2c7f7dacf00",
+    "title": "Classroom of the Elite",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6df91369-4914-4450-a82c-8692432d32f9",
+    "title": "Love is War",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a3639725-3a1c-4415-9e48-8126843e4367",
+    "title": "Spy x Family",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "42503ca7-00ad-408a-b315-1e77ce5650de",
+    "title": "Death Note",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e10b9599-941a-4fde-8bc8-68e9b0d2ea25",
+    "title": "Spriggan",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "dc400000-926b-4a8c-a581-e3560cd74749",
+    "title": "The Rising of the Shield Hero",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "582acfab-3805-436b-b04f-1786bf3870e1",
+    "title": "Call of the Night",
+    "rating": 9.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "cd18bc3b-cba1-4eaa-9262-586c595d968e",
+    "title": "Mushoku Tensei",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4b588f69-1c54-4956-acf5-63ac93dfecaa",
+    "title": "Date a Live",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "fcaf5b7f-0d15-497a-9f17-787b131113c2",
+    "title": "The Devil is a Part-Timer",
+    "rating": 4.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "121a2783-fcad-4a9a-983f-6f34313a464e",
+    "title": "Overlord",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3fcbdfd9-6920-4344-9b80-e868151d56e5",
+    "title": "Code Geass",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "956b0154-e16f-44f1-9db7-0992f9c0ce5a",
+    "title": "Seraph of the End",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "dbc5c4db-443b-4612-90d1-da9909572586",
+    "title": "The World’s Finest Assassin Gets Reincarnated in a Different World as an Aristocrat",
+    "rating": 7.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "95d86e26-2002-442f-b6b9-b49981325c15",
+    "title": "Love, Chunibyo, and Other Delusions!",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "02d2fb43-569d-4107-b8d8-1d6b1feced23",
+    "title": "No Game, No Life",
+    "rating": 7.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "1983f955-8f31-4ac4-9ec0-a08f646d0430",
+    "title": "My Isekai Life",
+    "rating": 3.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9157b065-86bf-4218-9303-c4a4efe743dd",
+    "title": "Chivalry of a Failed Knight",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "16cf7fb0-bea4-41f5-88cb-ff4726ed0de6",
+    "title": "Bleach",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e3b40fda-580d-4ae3-9be8-2002c58b5732",
+    "title": "Wise Man’s Grandchild",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "89283c1d-8697-474b-8417-7d7b0c7e581c",
+    "title": "I’m Standing On 1,000,000 Lives.",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c7a3ad82-71dd-484d-9a04-7dd430a18aa9",
+    "title": "Cautious Hero",
+    "rating": 7.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b6f65105-009e-48f0-9f1d-5b2ff7b88f8f",
+    "title": "Reincarnated as a Sword",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "89563a06-e495-4510-978d-ea2f42ea0fe7",
+    "title": "Arifureta",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a59f8bf0-08de-4871-8005-8e2d7bb0027d",
+    "title": "The Familiar of Zero",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "326f3aa1-9aaa-4166-abf5-44bcbd9091bb",
+    "title": "Guilty Crown",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "65c40eca-4ea2-47b2-a54d-94c6152b0b56",
+    "title": "Boarding School Juliet",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b58bdc70-5977-4c28-b898-c195d7e8419a",
+    "title": "Vinland Saga",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "77a09c51-f8bd-4658-8811-9fc4cc694a71",
+    "title": "The Irregular at Magic High School",
+    "rating": 5.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0824dff4-0a9c-42b1-b1a9-1a35ce506ee6",
+    "title": "Log Horizon",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "aa5d936a-a0fa-41ff-be1b-66a65cb83265",
+    "title": "Darwin’s Game",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b576224a-caf4-4e82-90d1-cc6d25d71cd6",
+    "title": "Death March to the Parallel World Rhapsody",
+    "rating": 6.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "dd501b90-15b9-41cb-ac74-8ebd05074c99",
+    "title": "Grimgar, Ashes and Illusions",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "168d92cb-9042-4186-a7f9-f3a809f53349",
+    "title": "Rokka: Braves of the Six Flowers",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "2018c7cc-5e06-4da5-b33f-c571eee3b976",
+    "title": "Eminence in Shadow",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "36f1f641-1f60-4caf-a0e6-44bd29d62881",
+    "title": "Isekai Cheat Magician",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "392d89a4-8ab2-4b82-b900-205a51c3b9da",
+    "title": "Tsukimichi -Moonlit Fantasy",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "11dad08f-3beb-4403-b099-76bc8ee53c8d",
+    "title": "The 8th son? Are you kidding me?",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "60f1be0d-e681-45bb-bd98-ae451a574236",
+    "title": "Welcome to Demon School! Iruma-kun",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e2a3d97d-8e99-4ed5-b1d9-a0879150d6d9",
+    "title": "When Supernatural Battles Became Commonplace",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0305c8ec-40aa-47a6-8d00-089bee1f715d",
+    "title": "Romantic Killer",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "335f85fd-719f-4cd1-b34d-477d84cd5337",
+    "title": "Combatants Will Be Dispatched!",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "284d3733-071c-4b30-b37b-eb9ee15cc6d8",
+    "title": "Absolute Duo",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b0b15c26-ac9f-42ba-9d74-170ec734867d",
+    "title": "Adventurers Who Don’t Believe in Humanity Will Save the World",
+    "rating": 8.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a82c775f-b4af-4d8c-82c3-f8d97d735744",
+    "title": "The Reincarnation of the Strongest Exorcist in Another World",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d23bb3a9-ffa0-45fa-a954-4685e61c6d94",
+    "title": "Redo of Healer",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "19a9b1b1-82ea-470e-8cd0-e5584e1bb7d6",
+    "title": "Problem children are coming from another world, aren’t they?",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "2fabc4fa-8ec2-4ca7-bcaf-8b65d1cb8fa6",
+    "title": "Aesthetica of a Rogue Hero",
+    "rating": 5.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b42aafe9-cfb6-4522-ac23-60a170b94d52",
+    "title": "Battle in 5 Seconds After Meeting",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "659027d3-6752-402b-b56a-16b062f16e3e",
+    "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b945b59e-cca5-4534-a518-0fdb6e902ed2",
+    "title": "The Aristocrat’s Otherworldly Adventure: Serving Gods Who Go Too Far",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "83e15c1f-2efc-4b7c-ade0-0d826e8136e3",
+    "title": "High School Prodigies Have It Easy Even in Another World!",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bad7a26b-79ac-4678-84bf-f9aad1009515",
+    "title": "Oshi no Ko",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "90890c1e-62e6-4ec2-97bb-4e9e1ad30f42",
+    "title": "I Got a Cheat Skill in Another World and Became Unrivaled in The Real World, Too",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8663e870-043f-43de-90a9-06767fbd32a9",
+    "title": "High School of the Dead",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "aa6d11f6-0946-44d8-b9fc-08e27e35cf2f",
+    "title": "My One-Hit Kill Sister",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "64f2076b-36d0-409a-b2a2-cbc96979b85c",
+    "title": "Re: Zero",
+    "rating": 9.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d0706dc2-2774-4a01-9f3c-5305dff614ae",
+    "title": "Tower of God",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "474e9ffa-9f0d-4260-8e5d-2ca59c184086",
+    "title": "D-Frag",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f4aed347-f4f4-4ce6-82b7-38eacd284ff3",
+    "title": "I Somehow Became Stronger by Raising Farming-Related Skills",
+    "rating": 7.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "414e71be-06d0-4c53-8ee0-8c18db597f5f",
+    "title": "Haganai",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "11c1f61e-28fa-469d-b0da-be3fa687be03",
+    "title": "Akame ga Kill!",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "43d92e86-c087-4a9b-b317-2b4204766b86",
+    "title": "Fate Zero/UBW",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "be06655b-cacf-4e30-a11a-30f06854be08",
+    "title": "Gate Season 1",
+    "rating": 5.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f9f86a7d-a9a2-44e2-8ac3-8623d80df46f",
+    "title": "My Mental Choices are Completely Interfering with my School Romantic Comedy",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8196d2ce-8cd8-4a62-a9a2-13ed0922f388",
+    "title": "Liar Liar",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4f5503e9-9b9a-485d-8c9e-b7c2a42fff27",
+    "title": "The Dreaming Boy is a Realist",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bbfcb53b-2cac-4441-b44c-e5d1d46526a9",
+    "title": "Akashic Records of Bastard Magic Instructor",
+    "rating": 7.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8f61a572-a8f3-4aa9-9cb9-aa127ca43700",
+    "title": "Isekai Quartet",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bd5d5825-e569-4611-857d-c1ab04480c73",
+    "title": "Charlotte",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "de728c66-3b8d-469f-a706-05f828b569f0",
+    "title": "Reign of the Seven Spellblades",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a6885ce2-f372-4b39-940d-4ca5cb449aea",
+    "title": "Masamune-Kun’s Revenge",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f5fcc52c-cd40-4f48-9608-100bde4dd042",
+    "title": "Toradora!",
+    "rating": 9.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c024be87-003e-4573-8141-f07074bbdcdd",
+    "title": "Rascal Does Not Dream Of Bunny Girl Senpai",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7f62fdf8-2d43-45fc-945b-6693ad528575",
+    "title": "Golden Time",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d66e1b22-10cf-4171-a4ef-e40664906c4a",
+    "title": "A Returner’s Magic Should Be Special",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a87cb842-c214-43cd-b67e-c57995076d25",
+    "title": "The Kingdoms of Ruin",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "78a02315-8735-4078-895d-ff8bcf212595",
+    "title": "Am I Actually the Strongest?",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0b953b4c-893c-4d5e-a5a9-242fde310f58",
+    "title": "Midori Days",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8e2d2161-bd3e-4027-bec8-023cc9f9b5b4",
+    "title": "The Angel Next Door Spoils Me Rotten",
+    "rating": 9.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6d5770cc-ccdd-4d75-9a01-ddbbd52126a1",
+    "title": "I Shall Survive Using Potions!",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "cb5c641e-6f84-4e55-abc4-6f2df61b9633",
+    "title": "My Teen Romantic Comedy SNAFU",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "23443140-ccb1-48ad-8291-bc6dc2d4b1c9",
+    "title": "Class President is a Maid!",
+    "rating": 9.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0991d216-678c-40d5-bf3b-c6f65936f0b1",
+    "title": "Assassins Pride",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "be7399f9-bf48-4e61-a372-d0b67196d18d",
+    "title": "Shimoneta",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "57972151-d9f5-456c-89fd-4570eb1da56f",
+    "title": "My Stepsister is My Ex-Girlfriend",
+    "rating": 8.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "43e50393-403e-4363-8843-1dd52cdc670d",
+    "title": "Love Flops",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3dd95053-6583-4f6c-b794-53041710a2dc",
+    "title": "More than a married couple, but not lovers.",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6f667cad-dfed-47cb-8f14-66d5cb37d8ae",
+    "title": "Plastic Memories",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "87f8cc22-de73-4b9c-8d9d-4115d8b39de0",
+    "title": "Angel Beats!",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "092d0780-bc84-47b3-9c5a-a5e5a074dcb7",
+    "title": "Horimiya",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7cab15ca-3cb3-4cf2-b3a7-7d75dafb6647",
+    "title": "The Demon Sword Master of Excalibur Academy",
+    "rating": 6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "dde1f963-43e8-49db-a1bc-74be10a36cb8",
+    "title": "Cyberpunk Edgerunners",
+    "rating": 8.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "98d7c681-cd08-4814-a247-14ee9617c0da",
+    "title": "Vermeil in Gold",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3bb43437-2aca-4d80-98fb-d1be2dfc3ddf",
+    "title": "A Couple of Cuckoos",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "451161c3-4112-4d75-aa56-20cfb25c7c76",
+    "title": "Mieruko-chan",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "ff41e00f-1370-4f34-b9af-9cb37f357684",
+    "title": "Jujutsu Kaisen",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a8b28f46-d87b-4ff6-9d68-443dfdd816f7",
+    "title": "A Silent Voice",
+    "rating": 10,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "026f04e6-4eae-4df7-91cf-4950f818fba8",
+    "title": "The Executioner and Her Way of Life",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "47c225c9-bc11-4fb1-96d2-a26859df9d86",
+    "title": "Clannad",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "288d74f3-a1a6-4bdf-85c8-cf78e838d873",
+    "title": "I’m Quitting Heroing!",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3ff380cc-f6ae-46c2-8729-d84261846daf",
+    "title": "Tomodachi Game",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "cf241048-b795-4e05-b991-2e045092569c",
+    "title": "The Wrong Way to Use Healing Magic",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "2a4b530c-10e7-4604-963d-0f6230343669",
+    "title": "The Foolish Angel Dances with the Devil",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "395f538a-5258-4a20-a3a6-8a679a1ceab3",
+    "title": "Frieren: Beyond Journey’s End",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "65177405-52e0-4588-b6c1-500f25f9634e",
+    "title": "Banished From The Hero's Party",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e5da4eba-be8b-4880-8006-1e337bf36172",
+    "title": "Mashle: Magic and Muscles",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "27ecd803-3cbf-4651-8985-c61df0f277e7",
+    "title": "Zom 100: Bucket List of the Dead",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c9b23211-a1f5-4abe-acc3-73048ad98034",
+    "title": "Solo Leveling",
+    "rating": 9.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a3cedeb3-cd15-4a8a-9899-0abfb9a34b59",
+    "title": "The Weakest Tamer Began a Journey to Pick Up Trash",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6357464c-1634-46bc-991a-7d598a8c4fd1",
+    "title": "Villainess Level 99",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bde489f5-83f3-49ff-b525-7fd435385917",
+    "title": "The Apothecary Diaries",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f3e3c554-9b41-4bf6-a5bd-cb1224da4b9b",
+    "title": "The Genius Prince’s Guide to Raising a Nation Out of Debt",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "18353661-60a0-4e6c-8854-bd47a56f7f6e",
+    "title": "The Strongest Tank’s Labyrinth Raids",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c16d8bb2-527d-4fbf-b110-2d48469dc0df",
+    "title": "AntiMagic Academy 35th Test Platoon",
+    "rating": 7.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7c03f594-d6ab-4e4c-8b80-2bd6147d5fad",
+    "title": "DearS",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "89d7a1ee-3177-4bcd-9a18-27cbffcede2b",
+    "title": "Sweet Reincarnation",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0a90f191-0b8a-47fb-9a21-69491c17643c",
+    "title": "Reborn to Master the Blade",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "58eeb2ad-5366-4f28-a61f-7c3a76013258",
+    "title": "Dragonar Academy",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "47ca9695-0e46-4548-be12-d70098ee2216",
+    "title": "The Greatest Demon Lord is Reborn as a Typical Nobody",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6a6beab7-1aa2-4fd9-a21f-874ca8506ad3",
+    "title": "Seven Mortal Sins",
+    "rating": 6.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5e24cf63-8926-42e5-b20c-b694c700b117",
+    "title": "How a Realist Hero Rebuilt the Kingdom",
+    "rating": 6.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "46ce5c59-d17f-44ef-bc8a-e89dc87d5502",
+    "title": "The Hidden Dungeon Only I Can Enter",
+    "rating": 5.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a69164ff-960f-4847-98db-a0bf4aab42b1",
+    "title": "Beast Tamer",
+    "rating": 6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "efa5d78a-9db0-4c87-901d-7f7c98334191",
+    "title": "Sakura Quest",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d5b30b53-c1b2-4ba8-a8e6-6d75c1929b15",
+    "title": "The Strongest Sage with the Weakest Crest",
+    "rating": 7.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "06553ed4-eb57-4bc6-a546-7612902ce159",
+    "title": "Knights & Magic",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5b9f3bce-ae90-4f74-9f54-d16886e121fc",
+    "title": "Re:Monster",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7e81d6dc-85ef-4a20-935b-395ca00dc7e6",
+    "title": "Nisekoi",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3b11efde-d71c-4e7b-aa2f-7a68395792d7",
+    "title": "Shironeko Project ZERO CHRONICLE",
+    "rating": 6.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "ce397108-a016-43f2-94be-2c8d92ff45f1",
+    "title": "Servamp",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9ca9db20-e749-46d8-9695-3b9bc55803f4",
+    "title": "Maoyu",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9b318ee5-f71a-4ed9-881e-cfda3a12fa96",
+    "title": "Trapped in a Dating Sim",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "fc6d61e3-a6cf-4076-b370-d721b50ba8b5",
+    "title": "Studio Apartment, Good Lighting, Angel Included",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "60c72b43-0092-4fbf-9e22-84bd33669ecd",
+    "title": "Nichijou",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "89b2e209-304c-4301-812e-7f795b9494a7",
+    "title": "Re:Dive",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6bb2d4f4-2727-498c-94c6-518bbd47f968",
+    "title": "Bottom-Tier Character Tomozaki",
+    "rating": 9.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "cd70f8d3-9365-425b-b431-9c3b05a733c1",
+    "title": "Asterisk War",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "40f9506e-25bb-4699-a964-10946867f8a6",
+    "title": "Unwanted Undead Adventurer",
+    "rating": 8.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c77993a0-3dba-4184-94cf-7ff9b83bd416",
+    "title": "Yamada-kun and the Seven Witches",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7dda7476-14b1-4565-844d-1daf19ebdcce",
+    "title": "Hyouka",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "33a5ced8-b61f-4dcb-a250-93d4ceb54c10",
+    "title": "Kubo Won’t Let Me Be Invisible",
+    "rating": 7.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "90e4913b-4bf8-4c54-96cc-5d6c5a43c83a",
+    "title": "Oresuki",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "63dae43c-d0f5-4cee-8aaa-6938547a2db0",
+    "title": "The New Gate",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4b302cf8-a33c-47bf-b916-51c8d42ee709",
+    "title": "My Instant Death Ability is Overpowered",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b2f4e9fa-d1f7-4630-8ccd-d44246057084",
+    "title": "The 100 Girlfriends",
+    "rating": 7.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bb5317b1-8c8a-4e75-9836-761a5eef5fe8",
+    "title": "Shinobi no Ittoki",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "200ddc98-4fd8-4b4f-a1ac-c5d802efefaf",
+    "title": "As a Reincarnated Aristocrat, I’ll use My Appraisal Skill to Rise in the World",
+    "rating": 7.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b04789b7-889b-4030-b865-0bd5157c93a0",
+    "title": "I Parry Everything",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4eee2366-cb1b-4927-86aa-797d21e035c3",
+    "title": "A Journey Through Another World",
+    "rating": 7.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "99c4b03f-b11b-4aba-bd23-7f9d142289f1",
+    "title": "Failure Frame",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "70bd4c2b-6e4b-406c-b562-c97c9349b24e",
+    "title": "The Ossan Newbie Adventurer",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3dd98078-a163-4a25-84b3-0160989b42d1",
+    "title": "Makeine",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "ceb88a84-888f-4137-bc99-877cf678d35c",
+    "title": "A Nobody’s Way Up to an Exploration Hero",
+    "rating": 8.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e982850e-7ee3-4741-9109-8e0754b9a0eb",
+    "title": "Wistoria",
+    "rating": 8.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6201f86f-be09-42e3-8d4f-e9cb17349a4d",
+    "title": "The Great Cleric",
+    "rating": 9.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "1d04bb61-f5a9-4496-a7fc-97daac20a2bd",
+    "title": "Spirit Chronicles",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "2eb28a90-06ae-403f-9603-4330197277de",
+    "title": "Skeleton Knight in Another World",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bbf52ad8-ca72-40fa-8255-54627d78ef50",
+    "title": "Parallel World Pharmacy",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "61ff83b5-8635-4327-b4cd-e2287f03de70",
+    "title": "The Iceblade Sorcerer Shall Rule the World",
+    "rating": 6.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e33be0c3-d35f-492b-ad73-dcb6152d1708",
+    "title": "Berserk of Gluttony",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5d1224ae-d9a5-44a9-9b01-4762e284298b",
+    "title": "By the Grace of the Gods",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "62a6bb4d-7417-4691-82e2-dc81b7ccdf3b",
+    "title": "Didn’t I Say to Make My Abilities Average in the Next Life?!",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7356ce84-28fc-4574-84ae-14a617480f20",
+    "title": "If it’s for My Daughter, I’d Even Defeat a Demon Lord",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f18b960c-a032-4eb7-ab6d-9c7f53ff11b9",
+    "title": "Bokuben",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e1af08a6-4b89-482f-83b8-2633bdcfb924",
+    "title": "Re:Life",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "48545bce-dd98-455c-a555-d268b4fcb645",
+    "title": "Farming Life in Another World",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "eb77ac37-a6af-4d62-8f37-20d7bcf5e455",
+    "title": "Campfire Cooking in Another World with My Absurd Skill",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "351ade33-00da-4fd9-a237-4b44e6ea0c6f",
+    "title": "Yusibu",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e0360a7c-29cc-4ea3-8e6f-1114d9668623",
+    "title": "My Next Life as a Villainess",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "bab7bc15-3227-4fe9-b7e4-e79f23111009",
+    "title": "I’m in Love with the Villainess",
+    "rating": 7.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0128ed59-ef24-4a1a-959d-6929863c5056",
+    "title": "In Another World With My Smartphone",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d802f49e-cd28-42ac-ab05-846e494cb836",
+    "title": "Loner Life in Another World",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e37f0d3d-37e2-45cd-a7a9-52a909bdde21",
+    "title": "My Unique Skill Makes Me OP Even at Level 1",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "fb56a570-7a44-4072-89ea-d843c3298553",
+    "title": "Reborn as a Vending Machine",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "cb257031-bce9-4bde-92cc-bd4500992953",
+    "title": "Love, Election and Chocolate",
+    "rating": 6.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f8fdfda6-6e0c-4c42-b2ed-048bb000caa3",
+    "title": "Chillin’ in My 30s after Getting Fired from the Demon King’s Army",
+    "rating": 7.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "03eb2ba3-26ed-417a-8010-1c5a2db1bf03",
+    "title": "Chillin’ in Another World with Level 2 super Cheat Powers",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0a0cea01-802c-4cbc-bea6-b2dcf92af881",
+    "title": "I’ll Become a Villainess Who Goes Down in History",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "973121ef-476f-4c42-86a7-75524dee21e3",
+    "title": "The Healer Who Was Banished From His Party, Is, in Fact, the Strongest",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "44d4a2dd-5732-4feb-8fe8-e1d5d7a984cd",
+    "title": "Most Notorious “Talker” Runs the World’s Greatest Clan",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "34622b54-8158-4ed3-a3ec-9229369f3656",
+    "title": "Good Bye, Dragon Life",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "107fbb16-0db7-4f4d-bf37-f5ddeb41709b",
+    "title": "Management of Novice Alchemist",
+    "rating": 8.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f4fa1948-c381-4f1e-a442-52e3b516988e",
+    "title": "Black Summoner",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "878a7c8e-5d2d-40d9-be45-98a0bf8a8185",
+    "title": "Osamake",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c0ef878e-b920-4bb6-b965-c0cd5cf52410",
+    "title": "Alya Sometimes Hides her Feelings in Russian",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3ac27848-1fdc-4783-9c71-3a7c3677f243",
+    "title": "Shoshimin",
+    "rating": 9.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "83152c71-dc73-4f93-9da5-9d6c8fedeb86",
+    "title": "Kuma Kuma Kuma Bear",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a7aaa2cb-42ee-44eb-9018-c483a33e95ba",
+    "title": "Fruit of Evolution",
+    "rating": 5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7725d598-372c-4814-8277-4626fd7d9ef3",
+    "title": "The Saga of Tanya the Evil",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8e852c92-f6c3-42a6-9d0a-40a55aeec0d1",
+    "title": "My Little Monster",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "fa83f6a6-96d6-4d1a-865b-c45dbd9ac017",
+    "title": "I Was Reincarnated as the 7th Prince so | Can Take My Time Perfecting My Magical Ability",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6ddd0025-3dfb-4791-9da7-c7ef5c58fc81",
+    "title": "Amagi Brilliant Park",
+    "rating": 9.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "210dbb91-ac1f-4b8d-bc9f-084d77982ad3",
+    "title": "The Most Heretical Last Boss Queen",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b7c01c7d-699b-4223-9948-c00deda8babf",
+    "title": "I’m the Villainess, So I’m Taking the Final Boss",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f36ad84d-cfde-4a7b-a3bc-50bd44d63dea",
+    "title": "Endo and Kobayashi Live!",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "303f4fd3-31d7-4f44-8732-a0e1c8cec98b",
+    "title": "The Reason Why Raeliana Ended up at the Duke's Mansion",
+    "rating": 8.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "452cf3c6-940d-4437-8580-17bc6fef46c8",
+    "title": "Bogus Skill <<Fruitmaster>>",
+    "rating": 7.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e603be76-4385-4167-9cd9-9e0ef1970309",
+    "title": "I’m a Noble on the Brink of Ruin, so I Might As Well Try Mastering Magic",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "75c7f0d2-db27-4233-a32e-d9da0fd9e8d2",
+    "title": "Possibly the Greatest Alchemist of All Time",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6f772d8f-3b28-4eb6-8c0b-615b5ef476a0",
+    "title": "I’m Getting Married to a Girl I Hate in My Class",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a98bc527-2f4b-4f5e-9e0e-aa9f2a93b23c",
+    "title": "Beheneko",
+    "rating": 7.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6b909c0a-986f-43f0-bad7-c10de89be60c",
+    "title": "Headhunted to Another World",
+    "rating": 7.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "20aac9b1-f862-4f63-8ff8-ebea6a5360c5",
+    "title": "Even Given the Worthless \"Appraiser\" Class, I'm Actually the Strongest",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f379d14d-1051-4dfd-9e1f-5e400ee11982",
+    "title": "Magic Maker",
+    "rating": 7.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "522bbc54-328c-4713-b134-deaf7fdf0b14",
+    "title": "Handyman Saitou in Another World",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "754d44b2-ac58-402e-8d8f-727a16552c18",
+    "title": "The Daily Life of a Middle-Aged Online Shopper in Another World",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b85b1aa9-3415-4650-88f5-a4542255dea3",
+    "title": "Love and Lies",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "ef4c51de-f4bc-421a-921f-50dfb16be193",
+    "title": "Days with My Stepsister",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3ee5dc96-3172-4650-8693-2784259908f1",
+    "title": "Cheat Pharmacist’s Slow Life",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "03c989f5-5fc2-4427-96da-d3da8e08a4eb",
+    "title": "TenPuru",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "184d188c-e1f1-4265-b668-35069121f289",
+    "title": "Medaka Kuroiwa is Impervious to My Charms",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d652eadc-f5e2-4a1c-a53b-c7033e484b1c",
+    "title": "Gamers!",
+    "rating": 8.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "fb9d01e7-cdbc-4026-a708-dfc255659d66",
+    "title": "AHO-Girl",
+    "rating": 8.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "1537ff5f-3e9b-451f-8e46-c33ce68ea809",
+    "title": "Tomo-Chan Is a Girl!",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "667ec78c-a1ff-455f-b99f-66b9030fe033",
+    "title": "Harem in the Labyrinth of Another World",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e7418c1c-4438-47f5-b86b-6cace43fab0d",
+    "title": "The Unaware Atelier Master",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "75e74396-cc57-41a1-9d10-708d9049b8ef",
+    "title": "Last Dungeon Boonies",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "ddab057e-ae2f-4ef3-b1c0-922c50095617",
+    "title": "The Beginning After the End",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d5700bf2-7040-40a7-aa2d-8e5b832bf921",
+    "title": "Can a Boy and Girl Friendship Hold Up?",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a7459f5d-5e27-45b8-b89e-358f3010b4bd",
+    "title": "From Old Country Bumpkin to Master Swordsman",
+    "rating": 8.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "b000fcab-93bd-44d2-bfd9-86b2c7b77c83",
+    "title": "I'm the Evil Lord of an intergalactic Empire!",
+    "rating": 8.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "dff3d538-246c-497f-b49f-7dfab4b91437",
+    "title": "The All-devouring Whale",
+    "rating": 9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "7adc2af7-537d-43c8-8533-9378d64b7b93",
+    "title": "2.5 Dimensional Seduction",
+    "rating": 8.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5d8cd661-98b8-48f3-af5d-26d09b9bec80",
+    "title": "MHA: Vigilantes",
+    "rating": 9.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8f0e8df5-5900-4601-b88e-b143a2016bde",
+    "title": "Mayo Chiki!",
+    "rating": 7.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a9d8bb34-fa87-4098-b4b0-90d6c6322894",
+    "title": "And you thought there is never a girl online?",
+    "rating": 8.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d512302f-a60e-4f4a-b75f-93b920f36e71",
+    "title": "Oreshura",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9b5ed04b-5f3a-4283-8017-2170327bdae5",
+    "title": "Monster But Wild",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5cf514ad-1209-48d0-ae65-6c811cd6fdb9",
+    "title": "Shomin Sample",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9916b1e0-499b-4c33-8580-ad7ed6478401",
+    "title": "Dealing with Mikadono Sisters Is a Breeze",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6f3d187d-d987-403e-b2c2-145251605955",
+    "title": "Private Tutor to the Duke’s Daughter",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "1ab738e4-ff2e-4611-b081-f3c751bc59a7",
+    "title": "Scooped Up by an S-Rank Adventurer!",
+    "rating": 6.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "466d795c-4652-43fa-a651-66b8d8d6a708",
+    "title": "Please Put Them On!",
+    "rating": 7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "babdb97f-ae13-4dfd-ab26-a0dc359447ae",
+    "title": "Blade Dance of the Elementalers",
+    "rating": 6.6,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "6fa06908-613a-49f8-a7df-cfc6e284c4c6",
+    "title": "GJ Club",
+    "rating": 9.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4e2fadbf-cb97-451f-8ff8-322ca6740d45",
+    "title": "Mother of the Goddess’ Dormitory",
+    "rating": 6.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e1cddedd-c7b2-4386-be80-3bbfe10eccff",
+    "title": "Bocchi the Rock!",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "0f82c3f3-d600-4640-bfbf-bf8f8187185b",
+    "title": "Yuuna and the Haunted Hot Springs",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a9e568c8-ca1c-4e10-ad52-f773cf579200",
+    "title": "Apocalypse Bringer Mynoghra",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "5469e5f0-bde1-4637-b9bc-347456a84182",
+    "title": "Ladies versus Butlers!",
+    "rating": 7.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "075ad3a4-de1a-45d3-9896-bed3b0a27d8c",
+    "title": "Seton Academy",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "3dafbc5b-89d9-43c9-bf8e-94b5826fde24",
+    "title": "They Are My Noble Masters",
+    "rating": 7.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "86046b60-a470-4ac4-ac67-c34b7d1d3791",
+    "title": "Brilliant Healers’s New Life in the Shadows",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a4e85e28-6d56-4227-bc45-937350669d53",
+    "title": "Isuka",
+    "rating": 7.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "acaad8f4-a65c-4e9d-95c1-b96b7861a64d",
+    "title": "Invaders of the Rokujyoma!?",
+    "rating": 9.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "c4e69959-c8f2-4a21-85bf-a4f0008becbb",
+    "title": "Monster Musume",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "da218821-bf88-4c5b-ac41-6a7a75da4d8e",
+    "title": "The Cafe Terrace and its Goddesses",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "93c2b5c8-f909-4893-b2d3-8b639a12b536",
+    "title": "Hero Without a Class",
+    "rating": 7.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "f21a5b1e-20ac-4e2a-8513-370467ad5d7d",
+    "title": "My Gift Lvl 9999 Unlimited Gacha",
+    "rating": 7.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "e5396a00-1c4a-494c-8683-73c3e7250bdf",
+    "title": "A Gatherer’s Adventure in Isekai",
+    "rating": 5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4cf89d46-355d-40ce-a915-d9275dbebb1f",
+    "title": "My Friend’s Little Sister Has It In for Me",
+    "rating": 6.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "a5fe4c31-79f8-4516-aa26-152c77f7213a",
+    "title": "My Status as an Assassin Obviously Exceeds the Hero’s",
+    "rating": 7.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d3530d22-f316-4897-9036-545d40e73a51",
+    "title": "The Dark History of the Reincarnated Villainess",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d933aead-f152-4d14-a207-f02c230fdbda",
+    "title": "Puella Magi Madoka Magica",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "8f37a99c-5e32-45fa-a1c2-bcddf5b01f70",
+    "title": "My Dress-Up Darling",
+    "rating": 8.7,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "091d9086-71b7-4caf-a64a-7cfe164f5af1",
+    "title": "Insomniacs After School",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "aab180b5-e3e8-47de-a1b3-c61d094cba32",
+    "title": "A Wild Last Boss Appeared!",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "9cb133f6-e4f9-4d75-a5a9-32a2f7961136",
+    "title": "Let This Grieving Soul Retire",
+    "rating": 8,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "d11ac88e-7f11-4d53-90f2-92ddc8be3d3e",
+    "title": "Chainsaw Man",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "4a78d14f-da7b-4d3c-b17d-6aca0b4f92cb",
+    "title": "The Water Magician",
+    "rating": 8.3,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "07768178-7018-4ed1-ba74-41f7c9999b91",
+    "title": "My Daughter Left the Nest and Returned and S-Rank Adventurer",
+    "rating": 8.1,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  },
+  {
+    "id": "77fa1829-fa8e-4bc7-9d9c-8c41681596a5",
+    "title": "Dad is a Hero, Mom is a Spirit, I'm a Reincarnator",
+    "rating": 8.2,
+    "createdAt": "2026-02-15T08:27:08.303Z",
+    "updatedAt": "2026-02-15T08:27:08.303Z"
+  }
+]
