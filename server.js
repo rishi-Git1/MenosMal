@@ -12,6 +12,8 @@ const mime = {
 
 const DATA_DIR = join(process.cwd(), 'data');
 const DATA_FILE = join(DATA_DIR, 'entries.json');
+const CANONICAL_HOST = process.env.CANONICAL_HOST?.trim().toLowerCase() || '';
+const ENFORCE_HTTPS = process.env.ENFORCE_HTTPS === 'true';
 
 async function ensureDataFile() {
   await mkdir(DATA_DIR, { recursive: true });
@@ -73,6 +75,32 @@ function isValidEntryPayload(payload) {
   if (!title) return false;
   if (Number.isNaN(rating) || rating < 0 || rating > 10) return false;
 
+  return true;
+}
+
+function getRequestHost(req) {
+  return (req.headers.host ?? '').toString().toLowerCase();
+}
+
+function getForwardedProto(req) {
+  return (req.headers['x-forwarded-proto'] ?? '').toString().toLowerCase();
+}
+
+function maybeRedirectToCanonical(req, res) {
+  if (!CANONICAL_HOST) return false;
+
+  const host = getRequestHost(req);
+  const isWrongHost = host && host !== CANONICAL_HOST;
+  const needsHttps = ENFORCE_HTTPS && getForwardedProto(req) && getForwardedProto(req) !== 'https';
+
+  if (!isWrongHost && !needsHttps) return false;
+
+  const targetHost = CANONICAL_HOST;
+  const targetPath = req.url ?? '/';
+  const redirectLocation = `https://${targetHost}${targetPath}`;
+
+  res.writeHead(308, { Location: redirectLocation });
+  res.end();
   return true;
 }
 
@@ -154,6 +182,11 @@ async function handleApi(req, res) {
     return true;
   }
 
+  if (url.pathname === '/api/health' && method === 'GET') {
+    sendJson(res, 200, { status: 'ok' });
+    return true;
+  }
+
   return false;
 }
 
@@ -170,6 +203,10 @@ async function handleStatic(req, res) {
 
 const server = createServer(async (req, res) => {
   try {
+    if (maybeRedirectToCanonical(req, res)) {
+      return;
+    }
+
     if ((req.url ?? '').startsWith('/api/')) {
       const handled = await handleApi(req, res);
       if (!handled) sendJson(res, 404, { error: 'Not found' });
