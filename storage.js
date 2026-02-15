@@ -1,52 +1,50 @@
-const KEY = "menosmal.anime.entries.v1";
-
-export function readEntries() {
-  const raw = localStorage.getItem(KEY);
-  if (!raw) return [];
-  try {
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
+export async function readEntries() {
+  const response = await fetch('/api/entries');
+  if (!response.ok) {
+    throw new Error('Failed to load entries.');
   }
+  return response.json();
 }
 
-export function writeEntries(entries) {
-  localStorage.setItem(KEY, JSON.stringify(entries));
-}
-
-export function addEntry({ title, rating }) {
-  const entries = readEntries();
-  const now = new Date().toISOString();
-  entries.push({
-    id: crypto.randomUUID(),
-    title: title.trim(),
-    rating: Number(rating),
-    createdAt: now,
-    updatedAt: now,
+export async function addEntry({ title, rating }) {
+  const response = await fetch('/api/entries', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title: title.trim(), rating: Number(rating) }),
   });
-  writeEntries(entries);
+
+  if (!response.ok) {
+    throw new Error('Failed to add entry.');
+  }
+
+  return response.json();
 }
 
-export function updateEntry(id, updates) {
-  const entries = readEntries();
-  const next = entries.map((entry) =>
-    entry.id === id
-      ? {
-          ...entry,
-          ...updates,
-          rating: Number(updates.rating ?? entry.rating),
-          title: (updates.title ?? entry.title).trim(),
-          updatedAt: new Date().toISOString(),
-        }
-      : entry,
-  );
-  writeEntries(next);
+export async function updateEntry(id, updates) {
+  const response = await fetch(`/api/entries/${encodeURIComponent(id)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      title: (updates.title ?? '').trim(),
+      rating: Number(updates.rating),
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to update entry.');
+  }
+
+  return response.json();
 }
 
-export function deleteEntry(id) {
-  const entries = readEntries();
-  writeEntries(entries.filter((entry) => entry.id !== id));
+export async function deleteEntry(id) {
+  const response = await fetch(`/api/entries/${encodeURIComponent(id)}`, {
+    method: 'DELETE',
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to delete entry.');
+  }
 }
 
 export function parseBulkImport(text) {
@@ -59,7 +57,7 @@ export function parseBulkImport(text) {
   const issues = [];
 
   if (lines.length % 2 !== 0) {
-    issues.push("Uneven lines detected. Last item may be incomplete.");
+    issues.push('Uneven lines detected. Last item may be incomplete.');
   }
 
   for (let i = 0; i < lines.length; i += 2) {
