@@ -96,5 +96,12 @@
     "rating": 9.6,
     "createdAt": "2026-02-15T07:50:51.258Z",
     "updatedAt": "2026-02-15T07:50:51.258Z"
+  },
+  {
+    "id": "0ddc2559-63e1-4041-b471-a06c37997ed9",
+    "title": "Mushoku Tensei",
+    "rating": 9.4,
+    "createdAt": "2026-02-15T07:51:31.185Z",
+    "updatedAt": "2026-02-15T07:51:31.185Z"
   }
 ]
