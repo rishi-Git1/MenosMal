@@ -61,5 +61,12 @@
     "rating": 8.8,
     "createdAt": "2026-02-15T07:54:50.159Z",
     "updatedAt": "2026-02-15T07:54:50.159Z"
+  },
+  {
+    "id": "aaa4500b-89f4-41c8-af08-2b97e5f5f121",
+    "title": "Demon Slayer",
+    "rating": 9,
+    "createdAt": "2026-02-15T07:54:51.239Z",
+    "updatedAt": "2026-02-15T07:54:51.239Z"
   }
 ]
