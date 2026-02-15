@@ -89,5 +89,12 @@
     "rating": 8,
     "createdAt": "2026-02-15T07:50:49.447Z",
     "updatedAt": "2026-02-15T07:50:49.447Z"
+  },
+  {
+    "id": "f31ae7ac-6bb7-4dce-8464-adc058bb95cb",
+    "title": "The Rising of the Shield Hero",
+    "rating": 7.9,
+    "createdAt": "2026-02-15T07:50:50.414Z",
+    "updatedAt": "2026-02-15T07:50:50.414Z"
   }
 ]
