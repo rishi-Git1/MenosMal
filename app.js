@@ -5,6 +5,7 @@ const entriesBody = document.getElementById('entries');
 const emptyState = document.getElementById('empty-state');
 const searchInput = document.getElementById('search');
 const sortSelect = document.getElementById('sort');
+const sortReverse = document.getElementById('sort-reverse');
 const toggleMinimizedButton = document.getElementById('toggle-minimized');
 const dialog = document.getElementById('edit-dialog');
 const editForm = document.getElementById('edit-form');
@@ -15,16 +16,35 @@ let isMinimized = false;
 const coverCache = new Map();
 const coverInFlight = new Set();
 
+function getCreatedTimestamp(entry) {
+  const parsed = Date.parse(entry.createdAt ?? entry.updatedAt ?? '');
+  return Number.isNaN(parsed) ? 0 : parsed;
+}
+
 function getVisibleEntries() {
   const query = searchInput.value.trim().toLowerCase();
   const sort = sortSelect.value;
+  const reverse = sortReverse.checked;
 
   const filtered = allEntries.filter((entry) => entry.title.toLowerCase().includes(query));
+  const indexById = new Map(allEntries.map((entry, index) => [entry.id, index]));
 
   filtered.sort((a, b) => {
-    if (sort === 'rating_desc') return b.rating - a.rating;
-    if (sort === 'title_asc') return a.title.localeCompare(b.title);
-    return new Date(b.createdAt) - new Date(a.createdAt);
+    let direction = 0;
+
+    if (sort === 'rating_desc') {
+      direction = b.rating - a.rating;
+      if (direction === 0) direction = a.title.localeCompare(b.title);
+    } else if (sort === 'title_asc') {
+      direction = a.title.localeCompare(b.title);
+    } else {
+      direction = getCreatedTimestamp(b) - getCreatedTimestamp(a);
+      if (direction === 0) {
+        direction = (indexById.get(b.id) ?? 0) - (indexById.get(a.id) ?? 0);
+      }
+    }
+
+    return reverse ? -direction : direction;
   });
 
   return filtered;
@@ -148,7 +168,7 @@ form.addEventListener('submit', async (event) => {
 
   try {
     const created = await addEntry({ title, rating });
-    allEntries.unshift(created);
+    allEntries.push(created);
     form.reset();
     render();
   } catch {
@@ -210,5 +230,6 @@ cancelEdit.addEventListener('click', () => dialog.close());
 
 searchInput.addEventListener('input', render);
 sortSelect.addEventListener('change', render);
+sortReverse.addEventListener('change', render);
 
 refreshEntries();

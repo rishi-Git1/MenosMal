@@ -40,11 +40,17 @@
           </label>
           <label>
             Sort
-            <select id="sort">
-              <option value="newest">Newest</option>
-              <option value="rating_desc">Highest rated</option>
-              <option value="title_asc">Alphabetical (A-Z)</option>
-            </select>
+            <div class="sort-controls">
+              <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="rating_desc">Highest rated</option>
+                <option value="title_asc">Alphabetical (A-Z)</option>
+              </select>
+              <label class="reverse-toggle" for="sort-reverse">
+                <input id="sort-reverse" type="checkbox" />
+                Reverse
+              </label>
+            </div>
           </label>
           <button type="button" id="toggle-minimized" class="secondary">Minimize list</button>
         </div>
