@@ -1,12 +1,5 @@
 [
   {
-    "id": "a112d36a-ef47-4c07-b51c-f43ed7462c49",
-    "title": "Naruto",
-    "rating": 9.9,
-    "createdAt": "2026-02-15T07:50:34.508Z",
-    "updatedAt": "2026-02-15T07:50:34.508Z"
-  },
-  {
     "id": "8cbe44e2-6be2-497c-8d40-d4eb8d0ff2d9",
     "title": "The Time I Got Reincarnated as a Slime",
     "rating": 9.3,
@@ -14,18 +7,18 @@
     "updatedAt": "2026-02-15T07:50:38.495Z"
   },
   {
+    "id": "f505b6e7-d139-43fb-aaa9-e9c11f0c7770",
+    "title": "The Misfit of Demon King Academy",
+    "rating": 7,
+    "createdAt": "2026-02-15T07:50:39.647Z",
+    "updatedAt": "2026-02-15T07:50:39.647Z"
+  },
+  {
     "id": "d09e3b20-81f2-4745-86c1-914cc6fce634",
     "title": "Konosuba",
     "rating": 9.8,
     "createdAt": "2026-02-15T07:50:40.509Z",
     "updatedAt": "2026-02-15T07:50:40.509Z"
-  },
-  {
-    "id": "56a43e98-23ac-4b50-9a46-82e459e74dc7",
-    "title": "So I’m a Spider, So What?",
-    "rating": 8.8,
-    "createdAt": "2026-02-15T07:50:42.295Z",
-    "updatedAt": "2026-02-15T07:50:42.295Z"
   },
   {
     "id": "ff1ff189-4a3c-4ffc-b767-cd0e11b4d8fe",
