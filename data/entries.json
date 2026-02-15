@@ -7,17 +7,10 @@
     "updatedAt": "2026-02-15T07:52:43.057Z"
   },
   {
-    "id": "5cd319e2-f8b0-4966-8333-da30a50f4a13",
-    "title": "Attack on Titan",
-    "rating": 9.8,
-    "createdAt": "2026-02-15T07:52:44.661Z",
-    "updatedAt": "2026-02-15T07:52:44.661Z"
-  },
-  {
-    "id": "f666e539-791d-47ef-9ff2-41d9cce36b17",
-    "title": "The Time I Got Reincarnated as a Slime",
-    "rating": 9.3,
-    "createdAt": "2026-02-15T07:52:47.592Z",
-    "updatedAt": "2026-02-15T07:52:47.592Z"
+    "id": "94c8dd6c-09a7-40cc-8441-089add71e856",
+    "title": "Sword Art Online",
+    "rating": 8,
+    "createdAt": "2026-02-15T07:52:46.681Z",
+    "updatedAt": "2026-02-15T07:52:46.681Z"
   }
 ]
