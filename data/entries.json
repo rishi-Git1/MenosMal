@@ -70,10 +70,17 @@
     "updatedAt": "2026-02-15T07:50:44.374Z"
   },
   {
-    "id": "668f86ec-0f60-4681-8f9c-0f87222bb566",
-    "title": "Love is War",
+    "id": "36b226bb-6e9a-44da-acd3-06129ca8d3fa",
+    "title": "Classroom of the Elite",
     "rating": 8.8,
-    "createdAt": "2026-02-15T07:50:46.040Z",
-    "updatedAt": "2026-02-15T07:50:46.040Z"
+    "createdAt": "2026-02-15T07:50:45.157Z",
+    "updatedAt": "2026-02-15T07:50:45.157Z"
+  },
+  {
+    "id": "8179191e-d8ad-4635-b094-be8eb7b99a86",
+    "title": "Spy x Family",
+    "rating": 9,
+    "createdAt": "2026-02-15T07:50:46.856Z",
+    "updatedAt": "2026-02-15T07:50:46.856Z"
   }
 ]
