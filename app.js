@@ -5,11 +5,15 @@ const entriesBody = document.getElementById('entries');
 const emptyState = document.getElementById('empty-state');
 const searchInput = document.getElementById('search');
 const sortSelect = document.getElementById('sort');
+const toggleMinimizedButton = document.getElementById('toggle-minimized');
 const dialog = document.getElementById('edit-dialog');
 const editForm = document.getElementById('edit-form');
 const cancelEdit = document.getElementById('cancel-edit');
 
 let allEntries = [];
+let isMinimized = false;
+const coverCache = new Map();
+const coverInFlight = new Set();
 
 function getVisibleEntries() {
   const query = searchInput.value.trim().toLowerCase();
@@ -26,6 +30,82 @@ function getVisibleEntries() {
   return filtered;
 }
 
+async function loadCoverArt(title) {
+  if (!title || coverCache.has(title) || coverInFlight.has(title)) return;
+
+  coverInFlight.add(title);
+  try {
+    const response = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(title)}&limit=1`);
+    if (!response.ok) {
+      coverCache.set(title, null);
+      return;
+    }
+
+    const payload = await response.json();
+    const first = payload?.data?.[0];
+    const imageUrl = first?.images?.jpg?.image_url ?? first?.images?.webp?.image_url ?? null;
+    coverCache.set(title, imageUrl);
+  } catch {
+    coverCache.set(title, null);
+  } finally {
+    coverInFlight.delete(title);
+    render();
+  }
+}
+
+function createTitleCell(entry) {
+  const titleCell = document.createElement('td');
+
+  if (isMinimized) {
+    titleCell.textContent = entry.title;
+    return titleCell;
+  }
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'title-cell';
+
+  const coverImage = document.createElement('img');
+  coverImage.className = 'cover-art';
+  coverImage.alt = `${entry.title} cover art`;
+
+  const cover = coverCache.get(entry.title);
+  if (cover) {
+    coverImage.src = cover;
+  } else {
+    coverImage.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="52" height="72"><rect width="100%" height="100%" fill="%232a2a2a"/></svg>';
+  }
+
+  const titleText = document.createElement('span');
+  titleText.textContent = entry.title;
+
+  wrapper.appendChild(coverImage);
+  wrapper.appendChild(titleText);
+  titleCell.appendChild(wrapper);
+
+  return titleCell;
+}
+
+function createActionsCell(entry) {
+  const actionsCell = document.createElement('td');
+  actionsCell.className = 'row';
+
+  const editButton = document.createElement('button');
+  editButton.className = 'secondary';
+  editButton.dataset.action = 'edit';
+  editButton.dataset.id = entry.id;
+  editButton.textContent = 'Edit';
+
+  const deleteButton = document.createElement('button');
+  deleteButton.className = 'danger';
+  deleteButton.dataset.action = 'delete';
+  deleteButton.dataset.id = entry.id;
+  deleteButton.textContent = 'Delete';
+
+  actionsCell.appendChild(editButton);
+  actionsCell.appendChild(deleteButton);
+  return actionsCell;
+}
+
 function render() {
   const entries = getVisibleEntries();
   entriesBody.innerHTML = '';
@@ -33,15 +113,20 @@ function render() {
 
   for (const entry of entries) {
     const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${entry.title}</td>
-      <td>${entry.rating.toFixed(1)}/10</td>
-      <td class="row">
-        <button class="secondary" data-action="edit" data-id="${entry.id}">Edit</button>
-        <button class="danger" data-action="delete" data-id="${entry.id}">Delete</button>
-      </td>
-    `;
+
+    row.appendChild(createTitleCell(entry));
+
+    const ratingCell = document.createElement('td');
+    ratingCell.textContent = `${entry.rating.toFixed(1)}/10`;
+    row.appendChild(ratingCell);
+
+    row.appendChild(createActionsCell(entry));
+
     entriesBody.appendChild(row);
+
+    if (!isMinimized) {
+      loadCoverArt(entry.title);
+    }
   }
 }
 
@@ -49,7 +134,7 @@ async function refreshEntries() {
   try {
     allEntries = await readEntries();
     render();
-  } catch (error) {
+  } catch {
     emptyState.style.display = 'block';
     emptyState.textContent = 'Unable to load your list right now. Try refreshing.';
   }
@@ -110,6 +195,12 @@ editForm.addEventListener('submit', async (event) => {
   } catch {
     alert('Could not save entry. Please try again.');
   }
+});
+
+toggleMinimizedButton.addEventListener('click', () => {
+  isMinimized = !isMinimized;
+  toggleMinimizedButton.textContent = isMinimized ? 'Expand list' : 'Minimize list';
+  render();
 });
 
 cancelEdit.addEventListener('click', () => dialog.close());
