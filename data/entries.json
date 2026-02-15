@@ -40,5 +40,12 @@
     "rating": 9.3,
     "createdAt": "2026-02-15T07:54:46.411Z",
     "updatedAt": "2026-02-15T07:54:46.411Z"
+  },
+  {
+    "id": "bbf02398-5eb5-40b5-b10f-f92b70069fe7",
+    "title": "The Misfit of Demon King Academy",
+    "rating": 7,
+    "createdAt": "2026-02-15T07:54:47.359Z",
+    "updatedAt": "2026-02-15T07:54:47.359Z"
   }
 ]
