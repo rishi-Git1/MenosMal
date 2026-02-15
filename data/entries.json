@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "f4bed27a-e676-4583-af30-b3d2eecb8a24",
+    "title": "my hero",
+    "rating": 5,
+    "createdAt": "2026-02-15T07:44:58.765Z",
+    "updatedAt": "2026-02-15T07:44:58.765Z"
+  }
+]
