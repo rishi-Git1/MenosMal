@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk Import | MenosMal Anime List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MenosMal Anime Tracker</h1>
+      <nav>
+        <a href="index.html">List</a>
+        <a href="import.html" aria-current="page">Bulk Import</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Paste from Notes</h2>
+        <p class="muted">Use repeating pairs of title and rating/10.</p>
+        <textarea id="bulk-text" rows="16" placeholder="Naruto&#10;7.8/10&#10;My Hero&#10;9.8/10"></textarea>
+        <div class="row">
+          <button id="preview-btn">Preview</button>
+          <button id="import-btn">Import Valid Entries</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Preview</h2>
+        <ul id="preview-list"></ul>
+        <h3>Issues</h3>
+        <ul id="issues-list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="storage.js"></script>
+    <script type="module" src="import.js"></script>
+  </body>
+</html>

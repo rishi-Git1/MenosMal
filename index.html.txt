@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenosMal Anime List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MenosMal Anime Tracker</h1>
+      <nav>
+        <a href="index.html" aria-current="page">List</a>
+        <a href="import.html">Bulk Import</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Quick Add</h2>
+        <form id="quick-add-form" class="grid-form">
+          <label>
+            Title
+            <input id="add-title" required maxlength="120" placeholder="Naruto" />
+          </label>
+          <label>
+            Rating (/10)
+            <input id="add-rating" type="number" min="0" max="10" step="0.1" required placeholder="7.8" />
+          </label>
+          <button type="submit">Add Entry</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Browse</h2>
+        <div class="toolbar">
+          <label>
+            Search
+            <input id="search" placeholder="Search title..." />
+          </label>
+          <label>
+            Sort
+            <select id="sort">
+              <option value="newest">Newest</option>
+              <option value="rating_desc">Highest rated</option>
+              <option value="title_asc">Alphabetical (A-Z)</option>
+            </select>
+          </label>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Rating</th>
+              <th>Added</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="entries"></tbody>
+        </table>
+        <p id="empty-state" class="muted">No entries yet. Add one above or use Bulk Import.</p>
+      </section>
+    </main>
+
+    <dialog id="edit-dialog">
+      <form id="edit-form" method="dialog" class="grid-form">
+        <h3>Edit Entry</h3>
+        <input id="edit-id" type="hidden" />
+        <label>
+          Title
+          <input id="edit-title" required maxlength="120" />
+        </label>
+        <label>
+          Rating (/10)
+          <input id="edit-rating" type="number" min="0" max="10" step="0.1" required />
+        </label>
+        <div class="row">
+          <button type="button" id="cancel-edit" class="secondary">Cancel</button>
+          <button type="submit">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="storage.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
