@@ -56,14 +56,20 @@ function sendJson(res, statusCode, payload) {
 }
 
 function isValidEntryPayload(payload) {
-  const title = typeof payload.title === 'string' ? payload.title.trim() : '';
-  const rating = Number(payload.rating);
+  const { title, rating } = normalizeEntryPayload(payload);
 
   if (!title) return false;
   if (Number.isNaN(rating) || rating < 0 || rating > 10) return false;
 
   return true;
 }
+
+function normalizeEntryPayload(payload) {
+  const title = typeof payload.title === 'string' ? payload.title.trim() : '';
+  const rating = Number(payload.rating);
+  return { title, rating };
+}
+
 
 function getRequestHost(req) {
   return (req.headers.host ?? '').toString().toLowerCase();
@@ -119,6 +125,41 @@ async function handleApi(req, res) {
     };
 
     entries.push(created);
+    await writeEntries(entries);
+    sendJson(res, 201, created);
+    return true;
+  }
+
+
+  if (url.pathname === '/api/entries/bulk' && method === 'POST') {
+    const payload = await readJsonBody(req);
+    const items = Array.isArray(payload.entries) ? payload.entries : [];
+
+    if (!items.length) {
+      sendJson(res, 400, { error: 'At least one entry is required.' });
+      return true;
+    }
+
+    const invalidIndex = items.findIndex((item) => !isValidEntryPayload(item));
+    if (invalidIndex !== -1) {
+      sendJson(res, 400, { error: `Invalid entry at index ${invalidIndex}.` });
+      return true;
+    }
+
+    const entries = await readEntries();
+    const now = new Date().toISOString();
+    const created = items.map((item) => {
+      const normalized = normalizeEntryPayload(item);
+      return {
+        id: randomUUID(),
+        title: normalized.title,
+        rating: normalized.rating,
+        createdAt: now,
+        updatedAt: now,
+      };
+    });
+
+    entries.push(...created);
     await writeEntries(entries);
     sendJson(res, 201, created);
     return true;

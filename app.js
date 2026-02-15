@@ -147,9 +147,10 @@ form.addEventListener('submit', async (event) => {
   if (!title.trim()) return;
 
   try {
-    await addEntry({ title, rating });
+    const created = await addEntry({ title, rating });
+    allEntries.unshift(created);
     form.reset();
-    await refreshEntries();
+    render();
   } catch {
     alert('Could not add entry. Please try again.');
   }
@@ -165,7 +166,8 @@ entriesBody.addEventListener('click', async (event) => {
   if (action === 'delete') {
     try {
       await deleteEntry(id);
-      await refreshEntries();
+      allEntries = allEntries.filter((item) => item.id !== id);
+      render();
     } catch {
       alert('Could not delete entry. Please try again.');
     }
@@ -189,9 +191,10 @@ editForm.addEventListener('submit', async (event) => {
   const rating = Number(document.getElementById('edit-rating').value);
 
   try {
-    await updateEntry(id, { title, rating });
+    const updated = await updateEntry(id, { title, rating });
+    allEntries = allEntries.map((item) => (item.id === id ? updated : item));
     dialog.close();
-    await refreshEntries();
+    render();
   } catch {
     alert('Could not save entry. Please try again.');
   }

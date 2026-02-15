@@ -1,4 +1,4 @@
-import { addEntry, parseBulkImport } from './storage.js';
+import { addEntriesBulk, parseBulkImport } from './storage.js';
 
 const textArea = document.getElementById('bulk-text');
 const previewBtn = document.getElementById('preview-btn');
@@ -42,9 +42,12 @@ importBtn.addEventListener('click', async () => {
   latestPreview = parseBulkImport(textArea.value);
 
   try {
-    for (const entry of latestPreview.parsed) {
-      await addEntry(entry);
+    if (!latestPreview.parsed.length) {
+      renderPreview();
+      return;
     }
+
+    await addEntriesBulk(latestPreview.parsed);
     renderPreview();
     alert(`Imported ${latestPreview.parsed.length} entries.`);
   } catch {

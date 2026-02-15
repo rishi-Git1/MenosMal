@@ -49,6 +49,7 @@ export function createGitHubStorage({
   }
 
   const baseUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path)}`;
+  let cachedSha = null;
 
   async function getRemoteFile() {
     const response = await fetchImpl(`${baseUrl}?ref=${encodeURIComponent(branch)}`, {
@@ -59,6 +60,7 @@ export function createGitHubStorage({
     });
 
     if (response.status === 404) {
+      cachedSha = null;
       return { exists: false, sha: null, entries: [] };
     }
 
@@ -70,6 +72,7 @@ export function createGitHubStorage({
     const payload = await response.json();
     const decoded = decodeBase64Utf8((payload.content || '').replace(/\n/g, ''));
     const parsed = JSON.parse(decoded || '[]');
+    cachedSha = payload.sha;
     return { exists: true, sha: payload.sha, entries: normalizeEntries(parsed) };
   }
 
@@ -92,7 +95,11 @@ export function createGitHubStorage({
       body: JSON.stringify(body),
     });
 
-    if (response.ok) return;
+    if (response.ok) {
+      const payload = await response.json();
+      cachedSha = payload?.content?.sha ?? cachedSha;
+      return;
+    }
 
     if (response.status === 409 && attempt < 2) {
       const latest = await getRemoteFile();
@@ -110,8 +117,14 @@ export function createGitHubStorage({
       return remote.entries;
     },
     async writeEntries(entries) {
-      const remote = await getRemoteFile();
-      await putRemoteFile(entries, remote.sha);
+      const shaToUse = cachedSha;
+      if (shaToUse === null) {
+        const remote = await getRemoteFile();
+        await putRemoteFile(entries, remote.sha);
+        return;
+      }
+
+      await putRemoteFile(entries, shaToUse);
     },
   };
 }

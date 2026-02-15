@@ -20,6 +20,25 @@ export async function addEntry({ title, rating }) {
   return response.json();
 }
 
+export async function addEntriesBulk(entries) {
+  const payload = entries.map((entry) => ({
+    title: (entry.title ?? '').trim(),
+    rating: Number(entry.rating),
+  }));
+
+  const response = await fetch('/api/entries/bulk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ entries: payload }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to bulk add entries.');
+  }
+
+  return response.json();
+}
+
 export async function updateEntry(id, updates) {
   const response = await fetch(`/api/entries/${encodeURIComponent(id)}`, {
     method: 'PUT',
