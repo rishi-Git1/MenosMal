@@ -1,47 +1,70 @@
 # MenosMal deployment guide for `rmal.linkpc.net`
 
-This app includes a Node server and file persistence (`data/entries.json`), so deploy it to a host with **persistent disk**.
+This app now supports **two storage modes**:
 
-## 1) Recommended host settings (Render or Railway)
+1. **Local file mode** (`data/entries.json`) for paid hosts with persistent disk.
+2. **GitHub-backed mode** (recommended for free hosting) that reads/writes `entries.json` in your repo via GitHub API.
+
+---
+
+## 1) Render service settings
 
 - Build command: `npm install`
 - Start command: `npm start`
 - Node version: current LTS (or latest stable)
-- Persistent disk/volume mount path: project root `data/`
 
-### Required environment variables
+### Domain env vars
 
-- `PORT` (provided automatically by most platforms)
-- `CANONICAL_HOST=rmal.linkpc.net`
+- `CANONICAL_HOST=www.rmal.linkpc.net`
 - `ENFORCE_HTTPS=true`
 
-> `CANONICAL_HOST` and `ENFORCE_HTTPS` are used by `server.js` to redirect non-canonical hostnames and non-HTTPS requests to `https://rmal.linkpc.net`.
+> Use `www.rmal.linkpc.net` as canonical if only `www` is pointed at Render.
 
-## 2) Domain and DNS setup (`rmal.linkpc.net`)
+---
 
-Because you are using a subdomain, create DNS on the `linkpc.net` zone:
+## 2) Free persistence mode (GitHub-backed)
 
-- Type: `CNAME`
-- Name/Host: `rmal`
-- Value/Target: your platform-provided hostname
-  - Render example: `your-service.onrender.com`
-  - Railway example: `your-app.up.railway.app`
-- TTL: default
+Set these environment variables in Render:
 
-If your platform specifically asks for an `A` record instead, use the exact value provided by that platform.
+- `STORAGE_BACKEND=github`
+- `GITHUB_OWNER=<your-github-username>`
+- `GITHUB_REPO=MenosMal`
+- `GITHUB_BRANCH=main`
+- `GITHUB_PATH=data/entries.json`
+- `GITHUB_TOKEN=<fine-grained-token-with-contents-read-write>`
 
-## 3) Add custom domain in hosting dashboard
+### Token scope
 
-1. Open your deployed service.
-2. Add custom domain: `rmal.linkpc.net`.
-3. Wait until certificate/SSL status is active.
+Create a fine-grained PAT that has **Contents: Read and Write** for this repository only.
+
+### Initialize data file in repo
+
+Create `data/entries.json` in your repo with:
+
+```json
+[]
+```
+
+The server will update this file through GitHub API on add/edit/delete.
+
+---
+
+## 3) DNS setup for your current provider
+
+Because your provider keeps root host records constrained, use `www`:
+
+- `CNAME` `www.rmal.linkpc.net` -> `menosmal.onrender.com`
+
+Then add `www.rmal.linkpc.net` as the custom domain in Render.
+
+---
 
 ## 4) Verify deployment
 
-After DNS/SSL propagate, check:
+After deploy:
 
-- `https://rmal.linkpc.net`
-- `https://rmal.linkpc.net/api/health`
+- `https://www.rmal.linkpc.net`
+- `https://www.rmal.linkpc.net/api/health`
 
 Expected health response:
 
@@ -49,8 +72,10 @@ Expected health response:
 {"status":"ok"}
 ```
 
+---
+
 ## 5) Operational notes
 
-- Keep one instance unless you move to a database.
-- Do not delete the mounted `data/` volume or you lose stored entries.
-- Back up `data/entries.json` periodically.
+- With GitHub mode, data survives redeploys and free instance restarts.
+- Never expose `GITHUB_TOKEN` to client-side code.
+- If two writes happen at once, server retries once on SHA conflict.

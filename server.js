@@ -1,7 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import { createServer } from 'node:http';
-import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
+import { createStorageFromEnv } from './persistence.js';
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -10,30 +11,16 @@ const mime = {
   '.json': 'application/json; charset=utf-8',
 };
 
-const DATA_DIR = join(process.cwd(), 'data');
-const DATA_FILE = join(DATA_DIR, 'entries.json');
+const storage = createStorageFromEnv();
 const CANONICAL_HOST = process.env.CANONICAL_HOST?.trim().toLowerCase() || '';
 const ENFORCE_HTTPS = process.env.ENFORCE_HTTPS === 'true';
 
-async function ensureDataFile() {
-  await mkdir(DATA_DIR, { recursive: true });
-  try {
-    await access(DATA_FILE);
-  } catch {
-    await writeFile(DATA_FILE, '[]', 'utf8');
-  }
-}
-
 async function readEntries() {
-  await ensureDataFile();
-  const raw = await readFile(DATA_FILE, 'utf8');
-  const parsed = JSON.parse(raw);
-  return Array.isArray(parsed) ? parsed : [];
+  return storage.readEntries();
 }
 
 async function writeEntries(entries) {
-  await ensureDataFile();
-  await writeFile(DATA_FILE, JSON.stringify(entries, null, 2), 'utf8');
+  return storage.writeEntries(entries);
 }
 
 function readJsonBody(req) {
