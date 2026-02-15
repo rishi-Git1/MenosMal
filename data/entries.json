@@ -89,12 +89,5 @@
     "rating": 9,
     "createdAt": "2026-02-15T07:54:55.272Z",
     "updatedAt": "2026-02-15T07:54:55.272Z"
-  },
-  {
-    "id": "21b494ed-2a35-48fb-b7cf-a5dcdff06107",
-    "title": "Death Note",
-    "rating": 8.5,
-    "createdAt": "2026-02-15T07:54:56.074Z",
-    "updatedAt": "2026-02-15T07:54:56.074Z"
   }
 ]
