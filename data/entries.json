@@ -63,10 +63,17 @@
     "updatedAt": "2026-02-15T07:54:50.159Z"
   },
   {
-    "id": "44954165-ab41-471d-aa9b-92e510e2381f",
-    "title": "Assassination Classroom",
-    "rating": 8.9,
-    "createdAt": "2026-02-15T07:54:52.050Z",
-    "updatedAt": "2026-02-15T07:54:52.050Z"
+    "id": "aaa4500b-89f4-41c8-af08-2b97e5f5f121",
+    "title": "Demon Slayer",
+    "rating": 9,
+    "createdAt": "2026-02-15T07:54:51.239Z",
+    "updatedAt": "2026-02-15T07:54:51.239Z"
+  },
+  {
+    "id": "7fb080be-f957-42e7-949a-53e4f255b075",
+    "title": "Classroom of the Elite",
+    "rating": 8.8,
+    "createdAt": "2026-02-15T07:54:53.227Z",
+    "updatedAt": "2026-02-15T07:54:53.227Z"
   }
 ]
