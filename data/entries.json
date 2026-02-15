@@ -40,5 +40,12 @@
     "rating": 7,
     "createdAt": "2026-02-15T07:50:39.647Z",
     "updatedAt": "2026-02-15T07:50:39.647Z"
+  },
+  {
+    "id": "d09e3b20-81f2-4745-86c1-914cc6fce634",
+    "title": "Konosuba",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T07:50:40.509Z",
+    "updatedAt": "2026-02-15T07:50:40.509Z"
   }
 ]
