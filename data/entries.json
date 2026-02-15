@@ -12,5 +12,12 @@
     "rating": 9.9,
     "createdAt": "2026-02-15T07:50:34.508Z",
     "updatedAt": "2026-02-15T07:50:34.508Z"
+  },
+  {
+    "id": "cb85d69b-1a0c-4127-ac5b-7d93cc1e5e75",
+    "title": "Attack on Titan",
+    "rating": 9.8,
+    "createdAt": "2026-02-15T07:50:35.481Z",
+    "updatedAt": "2026-02-15T07:50:35.481Z"
   }
 ]
