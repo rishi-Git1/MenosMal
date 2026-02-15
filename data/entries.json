@@ -70,11 +70,11 @@
     "updatedAt": "2026-02-15T07:50:44.374Z"
   },
   {
-    "id": "668f86ec-0f60-4681-8f9c-0f87222bb566",
-    "title": "Love is War",
-    "rating": 8.8,
-    "createdAt": "2026-02-15T07:50:46.040Z",
-    "updatedAt": "2026-02-15T07:50:46.040Z"
+    "id": "abefdf2b-a775-4b8a-a160-bc622f8f58d8",
+    "title": "Death Note",
+    "rating": 8.5,
+    "createdAt": "2026-02-15T07:50:48.039Z",
+    "updatedAt": "2026-02-15T07:50:48.039Z"
   },
   {
     "id": "dbf2071b-e72e-4455-8ce7-5ebd0500240e",
@@ -82,12 +82,5 @@
     "rating": 8,
     "createdAt": "2026-02-15T07:50:49.447Z",
     "updatedAt": "2026-02-15T07:50:49.447Z"
-  },
-  {
-    "id": "f7410b90-3d1e-48b2-8883-f5da260ac1a0",
-    "title": "Call of the Night",
-    "rating": 9.6,
-    "createdAt": "2026-02-15T07:50:51.258Z",
-    "updatedAt": "2026-02-15T07:50:51.258Z"
   }
 ]
