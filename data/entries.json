@@ -26,5 +26,12 @@
     "rating": 8,
     "createdAt": "2026-02-15T07:54:44.767Z",
     "updatedAt": "2026-02-15T07:54:44.767Z"
+  },
+  {
+    "id": "d12bc401-482d-4893-b296-8e8232f6cb09",
+    "title": "Sword Art Online",
+    "rating": 8,
+    "createdAt": "2026-02-15T07:54:45.589Z",
+    "updatedAt": "2026-02-15T07:54:45.589Z"
   }
 ]
