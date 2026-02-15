@@ -5,5 +5,12 @@
     "rating": 5,
     "createdAt": "2026-02-15T07:46:37.819Z",
     "updatedAt": "2026-02-15T07:46:37.819Z"
+  },
+  {
+    "id": "0724954c-0c12-41d0-b6fe-1dc670f65ceb",
+    "title": "My hero",
+    "rating": 5,
+    "createdAt": "2026-02-15T07:47:08.117Z",
+    "updatedAt": "2026-02-15T07:47:08.117Z"
   }
 ]
