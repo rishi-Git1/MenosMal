@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenosMal Custom Lists</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MenosMal Anime Tracker</h1>
+      <nav>
+        <a href="index.html">Full List</a>
+        <a href="custom-lists.html" aria-current="page">Custom Lists</a>
+        <a href="import.html">Bulk Import</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Create New List</h2>
+        <form id="create-list-form" class="grid-form">
+          <label>
+            List Name
+            <input id="new-list-name" required maxlength="100" placeholder="My Favorites" />
+          </label>
+          <button type="submit">Create List</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Your Lists</h2>
+        <div id="lists-container" class="lists-container">
+          <p id="empty-lists-state" class="muted">No custom lists yet. Create one above!</p>
+        </div>
+      </section>
+
+      <section class="panel" id="entries-section" style="display: none">
+        <div class="toolbar">
+          <label>
+            Search
+            <input id="search" placeholder="Search title..." />
+          </label>
+          <label>
+            Show Ratings
+            <input id="show-ratings" type="checkbox" />
+          </label>
+        </div>
+
+        <table id="entries-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th id="rating-header" style="display: none">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="entries"></tbody>
+        </table>
+      </section>
+
+      <dialog id="rename-dialog">
+        <form id="rename-form" method="dialog" class="grid-form">
+          <h3>Rename List</h3>
+          <input id="rename-list-old" type="hidden" />
+          <label>
+            New Name
+            <input id="rename-list-new" required maxlength="100" />
+          </label>
+          <div class="row">
+            <button type="button" id="cancel-rename" class="secondary">Cancel</button>
+            <button type="submit">Rename</button>
+          </div>
+        </form>
+      </dialog>
+
+      <dialog id="add-entry-dialog">
+        <form id="add-entry-form" method="dialog" class="grid-form">
+          <h3>Add Entry to List</h3>
+          <input id="add-entry-list-name" type="hidden" />
+          <label>
+            Select from Your Entries
+            <input id="add-entry-search" placeholder="Search title..." />
+          </label>
+          <div id="entry-suggestions" class="entry-suggestions"></div>
+          <div class="row">
+            <button type="button" id="cancel-add-entry" class="secondary">Cancel</button>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <script type="module" src="custom-lists.js"></script>
+  </body>
+</html>

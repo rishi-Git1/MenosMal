@@ -187,6 +187,16 @@ table {
   overflow: hidden;
 }
 
+#entries-table {
+  border: none;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+#entries-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
 th,
 td {
   border-bottom: 1px solid var(--border);
@@ -283,4 +293,94 @@ dialog::backdrop {
   border-radius: 999px;
   padding: 0.2rem 0.55rem;
   font-size: 0.85rem;
+}
+
+.list-accordion-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-soft);
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+}
+
+.list-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.list-accordion-header:hover {
+  background: color-mix(in srgb, var(--panel-soft) 80%, white 20%);
+}
+
+.list-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.expand-btn {
+  min-width: 40px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.list-accordion-content {
+  border-top: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.list-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.list-actions button {
+  min-width: 80px;
+  text-align: center;
+}
+
+.lists-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.entry-suggestions {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: var(--panel-soft);
+}
+
+.suggestion-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  background: var(--bg-elevated);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.suggestion-item span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suggestion-item button {
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  min-width: 50px;
 }

@@ -66,6 +66,91 @@ export async function deleteEntry(id) {
   }
 }
 
+export async function getCustomLists() {
+  const response = await fetch('/api/lists');
+  if (!response.ok) {
+    throw new Error('Failed to load custom lists.');
+  }
+  return response.json();
+}
+
+export async function createCustomList(name) {
+  const response = await fetch('/api/lists', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name.trim() }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to create custom list.');
+  }
+
+  return response.json();
+}
+
+export async function renameCustomList(oldName, newName) {
+  const response = await fetch(`/api/lists/${encodeURIComponent(oldName)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: newName.trim() }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to rename custom list.');
+  }
+
+  return response.json();
+}
+
+export async function deleteCustomList(name) {
+  const response = await fetch(`/api/lists/${encodeURIComponent(name)}`, {
+    method: 'DELETE',
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to delete custom list.');
+  }
+}
+
+export async function getCustomList(name) {
+  const response = await fetch(`/api/lists/${encodeURIComponent(name)}`);
+
+  if (!response.ok) {
+    throw new Error('Failed to load custom list.');
+  }
+
+  return response.json();
+}
+
+export async function addEntryToList(listName, entryId) {
+  const response = await fetch(
+    `/api/lists/${encodeURIComponent(listName)}/entries/${encodeURIComponent(entryId)}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error('Failed to add entry to list.');
+  }
+
+  return response.json();
+}
+
+export async function removeEntryFromList(listName, entryId) {
+  const response = await fetch(
+    `/api/lists/${encodeURIComponent(listName)}/entries/${encodeURIComponent(entryId)}`,
+    {
+      method: 'DELETE',
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error('Failed to remove entry from list.');
+  }
+}
+
 export function parseBulkImport(text) {
   const lines = text
     .split(/\r?\n/)

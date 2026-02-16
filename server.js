@@ -23,6 +23,26 @@ async function writeEntries(entries) {
   return storage.writeEntries(entries);
 }
 
+async function readLists() {
+  return storage.readLists();
+}
+
+async function readList(name) {
+  return storage.readList(name);
+}
+
+async function writeList(name, entryIds) {
+  return storage.writeList(name, entryIds);
+}
+
+async function deleteList(name) {
+  return storage.deleteList(name);
+}
+
+async function listExists(name) {
+  return storage.listExists(name);
+}
+
 function readJsonBody(req) {
   return new Promise((resolve, reject) => {
     let body = '';
@@ -212,6 +232,175 @@ async function handleApi(req, res) {
 
   if (url.pathname === '/api/health' && method === 'GET') {
     sendJson(res, 200, { status: 'ok' });
+    return true;
+  }
+
+  if (url.pathname === '/api/lists' && method === 'GET') {
+    try {
+      const listNames = await readLists();
+      const entries = await readEntries();
+      const lists = await Promise.all(
+        listNames.map(async (name) => {
+          const entryIds = await readList(name);
+          return {
+            name,
+            count: entryIds.length,
+          };
+        })
+      );
+      sendJson(res, 200, lists);
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to read lists' });
+    }
+    return true;
+  }
+
+  if (url.pathname === '/api/lists' && method === 'POST') {
+    try {
+      const payload = await readJsonBody(req);
+      const name = typeof payload.name === 'string' ? payload.name.trim() : '';
+
+      if (!name) {
+        sendJson(res, 400, { error: 'List name is required.' });
+        return true;
+      }
+
+      const exists = await listExists(name);
+      if (exists) {
+        sendJson(res, 400, { error: 'List already exists.' });
+        return true;
+      }
+
+      await writeList(name, []);
+      sendJson(res, 201, { name, count: 0 });
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to create list' });
+    }
+    return true;
+  }
+
+  if (url.pathname.startsWith('/api/lists/') && method === 'GET') {
+    try {
+      const pathname = url.pathname.replace('/api/lists/', '');
+      const name = decodeURIComponent(pathname);
+
+      const exists = await listExists(name);
+      if (!exists) {
+        sendJson(res, 404, { error: 'List not found.' });
+        return true;
+      }
+
+      const entryIds = await readList(name);
+      sendJson(res, 200, { name, entryIds });
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to read list' });
+    }
+    return true;
+  }
+
+  if (url.pathname.startsWith('/api/lists/') && method === 'PUT') {
+    try {
+      const pathname = url.pathname.replace('/api/lists/', '');
+      const oldName = decodeURIComponent(pathname);
+      const payload = await readJsonBody(req);
+      const newName = typeof payload.name === 'string' ? payload.name.trim() : '';
+
+      if (!newName) {
+        sendJson(res, 400, { error: 'New list name is required.' });
+        return true;
+      }
+
+      const exists = await listExists(oldName);
+      if (!exists) {
+        sendJson(res, 404, { error: 'List not found.' });
+        return true;
+      }
+
+      const newExists = await listExists(newName);
+      if (newExists && oldName !== newName) {
+        sendJson(res, 400, { error: 'List with new name already exists.' });
+        return true;
+      }
+
+      const entryIds = await readList(oldName);
+      await writeList(newName, entryIds);
+      if (oldName !== newName) {
+        await deleteList(oldName);
+      }
+
+      sendJson(res, 200, { name: newName, count: entryIds.length });
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to rename list' });
+    }
+    return true;
+  }
+
+  if (url.pathname.startsWith('/api/lists/') && method === 'DELETE') {
+    try {
+      const pathname = url.pathname.replace('/api/lists/', '');
+      const name = decodeURIComponent(pathname);
+
+      const exists = await listExists(name);
+      if (!exists) {
+        sendJson(res, 404, { error: 'List not found.' });
+        return true;
+      }
+
+      await deleteList(name);
+      res.writeHead(204);
+      res.end();
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to delete list' });
+    }
+    return true;
+  }
+
+  if (url.pathname.match(/^\/api\/lists\/[^/]+\/entries\/[^/]+$/) && method === 'POST') {
+    try {
+      const parts = url.pathname.split('/');
+      const listName = decodeURIComponent(parts[3]);
+      const entryId = decodeURIComponent(parts[5]);
+
+      const exists = await listExists(listName);
+      if (!exists) {
+        sendJson(res, 404, { error: 'List not found.' });
+        return true;
+      }
+
+      const entryIds = await readList(listName);
+      if (!entryIds.includes(entryId)) {
+        entryIds.push(entryId);
+        await writeList(listName, entryIds);
+      }
+
+      sendJson(res, 200, { name: listName, entryIds });
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to add entry to list' });
+    }
+    return true;
+  }
+
+  if (url.pathname.match(/^\/api\/lists\/[^/]+\/entries\/[^/]+$/) && method === 'DELETE') {
+    try {
+      const parts = url.pathname.split('/');
+      const listName = decodeURIComponent(parts[3]);
+      const entryId = decodeURIComponent(parts[5]);
+
+      const exists = await listExists(listName);
+      if (!exists) {
+        sendJson(res, 404, { error: 'List not found.' });
+        return true;
+      }
+
+      const entryIds = await readList(listName);
+      const next = entryIds.filter((id) => id !== entryId);
+      await writeList(listName, next);
+
+      res.writeHead(204);
+      res.end();
+    } catch (err) {
+      sendJson(res, 500, { error: err.message || 'Failed to remove entry from list' });
+    }
     return true;
   }
 
