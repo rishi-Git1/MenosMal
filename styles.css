@@ -246,3 +246,41 @@ dialog::backdrop {
 #issues-list li {
   margin-bottom: 0.35rem;
 }
+
+.actions-cell {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.actions-cell button {
+  min-width: 64px;
+  text-align: center;
+}
+
+.info-dialog-content {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.info-dialog-content h3 {
+  margin: 0;
+}
+
+.info-dialog-content p {
+  margin: 0;
+}
+
+.genres-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.genre-chip {
+  background: #2f2f2f;
+  border: 1px solid #434343;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.85rem;
+}

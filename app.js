@@ -7,14 +7,24 @@ const searchInput = document.getElementById('search');
 const sortSelect = document.getElementById('sort');
 const sortReverse = document.getElementById('sort-reverse');
 const toggleMinimizedButton = document.getElementById('toggle-minimized');
-const dialog = document.getElementById('edit-dialog');
+
+const editDialog = document.getElementById('edit-dialog');
 const editForm = document.getElementById('edit-form');
 const cancelEdit = document.getElementById('cancel-edit');
 
+const infoDialog = document.getElementById('info-dialog');
+const infoTitle = document.getElementById('info-title');
+const infoRelease = document.getElementById('info-release');
+const infoGenres = document.getElementById('info-genres');
+const infoDescription = document.getElementById('info-description');
+const closeInfo = document.getElementById('close-info');
+
 let allEntries = [];
 let isMinimized = false;
+
 const coverCache = new Map();
-const coverInFlight = new Set();
+const animeInfoCache = new Map();
+const animeInfoInFlight = new Map();
 
 function getCreatedTimestamp(entry) {
   const parsed = Date.parse(entry.createdAt ?? entry.updatedAt ?? '');
@@ -50,27 +60,69 @@ function getVisibleEntries() {
   return filtered;
 }
 
-async function loadCoverArt(title) {
-  if (!title || coverCache.has(title) || coverInFlight.has(title)) return;
-
-  coverInFlight.add(title);
-  try {
-    const response = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(title)}&limit=1`);
-    if (!response.ok) {
-      coverCache.set(title, null);
-      return;
+function formatReleaseDate(anime) {
+  const from = anime?.aired?.from;
+  if (from) {
+    const date = new Date(from);
+    if (!Number.isNaN(date.getTime())) {
+      return date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
     }
-
-    const payload = await response.json();
-    const first = payload?.data?.[0];
-    const imageUrl = first?.images?.jpg?.image_url ?? first?.images?.webp?.image_url ?? null;
-    coverCache.set(title, imageUrl);
-  } catch {
-    coverCache.set(title, null);
-  } finally {
-    coverInFlight.delete(title);
-    render();
   }
+
+  if (anime?.year) return String(anime.year);
+  return 'Unknown';
+}
+
+function normalizeAnimeInfo(title, anime) {
+  const imageUrl = anime?.images?.jpg?.image_url ?? anime?.images?.webp?.image_url ?? null;
+  return {
+    title,
+    releaseDate: formatReleaseDate(anime),
+    synopsis: anime?.synopsis?.trim() || 'No description available.',
+    genres: Array.isArray(anime?.genres) ? anime.genres.map((genre) => genre?.name).filter(Boolean) : [],
+    imageUrl,
+  };
+}
+
+async function fetchAnimeInfo(title) {
+  if (!title) return null;
+  if (animeInfoCache.has(title)) return animeInfoCache.get(title);
+  if (animeInfoInFlight.has(title)) return animeInfoInFlight.get(title);
+
+  const promise = (async () => {
+    try {
+      const response = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(title)}&limit=1`);
+      if (!response.ok) {
+        const fallback = normalizeAnimeInfo(title, null);
+        animeInfoCache.set(title, fallback);
+        coverCache.set(title, null);
+        return fallback;
+      }
+
+      const payload = await response.json();
+      const first = payload?.data?.[0] ?? null;
+      const info = normalizeAnimeInfo(title, first);
+      animeInfoCache.set(title, info);
+      coverCache.set(title, info.imageUrl);
+      return info;
+    } catch {
+      const fallback = normalizeAnimeInfo(title, null);
+      animeInfoCache.set(title, fallback);
+      coverCache.set(title, null);
+      return fallback;
+    } finally {
+      animeInfoInFlight.delete(title);
+    }
+  })();
+
+  animeInfoInFlight.set(title, promise);
+  return promise;
+}
+
+async function loadCoverArt(title) {
+  if (!title || coverCache.has(title)) return;
+  await fetchAnimeInfo(title);
+  render();
 }
 
 function createTitleCell(entry) {
@@ -107,7 +159,13 @@ function createTitleCell(entry) {
 
 function createActionsCell(entry) {
   const actionsCell = document.createElement('td');
-  actionsCell.className = 'row';
+  actionsCell.className = 'row actions-cell';
+
+  const infoButton = document.createElement('button');
+  infoButton.className = 'secondary';
+  infoButton.dataset.action = 'info';
+  infoButton.dataset.id = entry.id;
+  infoButton.textContent = 'Info';
 
   const editButton = document.createElement('button');
   editButton.className = 'secondary';
@@ -121,6 +179,7 @@ function createActionsCell(entry) {
   deleteButton.dataset.id = entry.id;
   deleteButton.textContent = 'Delete';
 
+  actionsCell.appendChild(infoButton);
   actionsCell.appendChild(editButton);
   actionsCell.appendChild(deleteButton);
   return actionsCell;
@@ -148,6 +207,42 @@ function render() {
       loadCoverArt(entry.title);
     }
   }
+}
+
+function showInfoLoading(entry) {
+  infoTitle.textContent = entry.title;
+  infoRelease.textContent = 'Loading...';
+  infoGenres.innerHTML = '<span class="muted">Loading genres...</span>';
+  infoDescription.textContent = 'Loading description...';
+}
+
+function renderInfo(entry, info) {
+  infoTitle.textContent = entry.title;
+  infoRelease.textContent = info.releaseDate;
+  infoDescription.textContent = info.synopsis;
+
+  infoGenres.innerHTML = '';
+  if (!info.genres.length) {
+    infoGenres.innerHTML = '<span class="muted">No genres found.</span>';
+    return;
+  }
+
+  for (const genre of info.genres) {
+    const chip = document.createElement('span');
+    chip.className = 'genre-chip';
+    chip.textContent = genre;
+    infoGenres.appendChild(chip);
+  }
+}
+
+async function openInfoDialog(entry) {
+  if (!entry) return;
+
+  showInfoLoading(entry);
+  if (!infoDialog.open) infoDialog.showModal();
+
+  const info = await fetchAnimeInfo(entry.title);
+  renderInfo(entry, info);
 }
 
 async function refreshEntries() {
@@ -194,13 +289,19 @@ entriesBody.addEventListener('click', async (event) => {
     return;
   }
 
+  if (action === 'info') {
+    const entry = allEntries.find((item) => item.id === id);
+    await openInfoDialog(entry);
+    return;
+  }
+
   if (action === 'edit') {
     const entry = allEntries.find((item) => item.id === id);
     if (!entry) return;
     document.getElementById('edit-id').value = entry.id;
     document.getElementById('edit-title').value = entry.title;
     document.getElementById('edit-rating').value = entry.rating;
-    dialog.showModal();
+    editDialog.showModal();
   }
 });
 
@@ -213,7 +314,7 @@ editForm.addEventListener('submit', async (event) => {
   try {
     const updated = await updateEntry(id, { title, rating });
     allEntries = allEntries.map((item) => (item.id === id ? updated : item));
-    dialog.close();
+    editDialog.close();
     render();
   } catch {
     alert('Could not save entry. Please try again.');
@@ -226,7 +327,8 @@ toggleMinimizedButton.addEventListener('click', () => {
   render();
 });
 
-cancelEdit.addEventListener('click', () => dialog.close());
+cancelEdit.addEventListener('click', () => editDialog.close());
+closeInfo.addEventListener('click', () => infoDialog.close());
 
 searchInput.addEventListener('input', render);
 sortSelect.addEventListener('change', render);

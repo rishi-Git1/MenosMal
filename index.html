@@ -88,6 +88,21 @@
       </form>
     </dialog>
 
+
+    <dialog id="info-dialog">
+      <div class="info-dialog-content">
+        <h3 id="info-title">Anime Info</h3>
+        <p><strong>Release date:</strong> <span id="info-release">-</span></p>
+        <p><strong>Genres:</strong></p>
+        <div id="info-genres" class="genres-wrap"></div>
+        <p><strong>Description:</strong></p>
+        <p id="info-description" class="muted">No description available.</p>
+        <div class="row">
+          <button type="button" id="close-info" class="secondary">Close</button>
+        </div>
+      </div>
+    </dialog>
+
     <script type="module" src="storage.js"></script>
     <script type="module" src="app.js"></script>
   </body>
