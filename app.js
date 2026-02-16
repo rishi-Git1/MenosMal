@@ -119,12 +119,6 @@ async function fetchAnimeInfo(title) {
   return promise;
 }
 
-async function loadCoverArt(title) {
-  if (!title || coverCache.has(title)) return;
-  await fetchAnimeInfo(title);
-  render();
-}
-
 function createTitleCell(entry) {
   const titleCell = document.createElement('td');
 
@@ -203,9 +197,6 @@ function render() {
 
     entriesBody.appendChild(row);
 
-    if (!isMinimized) {
-      loadCoverArt(entry.title);
-    }
   }
 }
 
@@ -243,6 +234,7 @@ async function openInfoDialog(entry) {
 
   const info = await fetchAnimeInfo(entry.title);
   renderInfo(entry, info);
+  render();
 }
 
 async function refreshEntries() {
