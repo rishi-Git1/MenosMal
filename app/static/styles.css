@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-button {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  background: #1f6feb;
+  border: 1px solid #3d8bfd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+#controls,
+#h2h-controls {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+input,
+select,
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: #e6edf3;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+#results,
+.players-table,
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #161b22;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #30363d;
+  text-align: right;
+}
+
+th:first-child,
+td:first-child,
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 14px;
+  background: #0f1520;
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 960px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+#team-summary {
+  margin: 10px 0 16px;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #161b22;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 8px;
+  border-bottom: 1px solid #30363d;
+}
+
+.summary-table .metric-col {
+  text-align: left;
+  font-weight: 700;
+}
+
+.summary-table .team-col {
+  text-align: right;
+}
+
+.summary-table .team-col.winner {
+  color: #7ee787;
+  font-weight: 700;
+}
+
+.arrow {
+  display: inline-block;
+  width: 14px;
+  margin-right: 6px;
+}
+
+
+.top-scrollbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 8px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #161b22;
+}
+
+#results-top-scroll-inner {
+  height: 12px;
+}
